@@ -34,6 +34,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -46,7 +47,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Task_F.cs">
+    <Compile Include="F_Subdiv.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_Subdiv.Designer.cs">
+      <DependentUpon>F_Subdiv.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login_F.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login_F.Designer.cs">
+      <DependentUpon>Login_F.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_task.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Drivers.cs">
@@ -55,8 +68,8 @@
     <Compile Include="Drivers.Designer.cs">
       <DependentUpon>Drivers.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Task_F.cs</DependentUpon>
+    <Compile Include="F_task.Designer.cs">
+      <DependentUpon>F_task.cs</DependentUpon>
     </Compile>
     <Compile Include="KP_TagmetDataSet.cs">
       <DependentUpon>KP_TagmetDataSet.xsd</DependentUpon>
@@ -71,8 +84,8 @@
     <EmbeddedResource Include="Drivers.resx">
       <DependentUpon>Drivers.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Task_F.cs</DependentUpon>
+    <EmbeddedResource Include="F_Subdiv.resx">
+      <DependentUpon>F_Subdiv.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -83,6 +96,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="F_task.resx">
+      <DependentUpon>F_task.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="KP_TagmetDataSet.xsc">
       <DependentUpon>KP_TagmetDataSet.xsd</DependentUpon>
     </None>

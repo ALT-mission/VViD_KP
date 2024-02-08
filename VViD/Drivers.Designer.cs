@@ -43,18 +43,18 @@
             this.button_Edd = new System.Windows.Forms.Button();
             this.button_Del = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.kP_TagmetDataSet = new VViD.KP_TagmetDataSet();
-            this.driversBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.driversTableAdapter = new VViD.KP_TagmetDataSetTableAdapters.DriversTableAdapter();
             this.iDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.lastNamDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.firstNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.middleNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.numDriveLicenseDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabNumDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.driversBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.kP_TagmetDataSet = new VViD.KP_TagmetDataSet();
+            this.driversTableAdapter = new VViD.KP_TagmetDataSetTableAdapters.DriversTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.kP_TagmetDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.driversBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kP_TagmetDataSet)).BeginInit();
             this.SuspendLayout();
             // 
             // TB_F
@@ -178,7 +178,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.button_Edd.Location = new System.Drawing.Point(323, 278);
             this.button_Edd.Name = "button_Edd";
-            this.button_Edd.Size = new System.Drawing.Size(75, 23);
+            this.button_Edd.Size = new System.Drawing.Size(95, 23);
             this.button_Edd.TabIndex = 11;
             this.button_Edd.Text = "Редактировать";
             this.button_Edd.UseVisualStyleBackColor = true;
@@ -211,26 +211,12 @@
             this.numDriveLicenseDataGridViewTextBoxColumn,
             this.tabNumDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.driversBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(1, 13);
+            this.dataGridView1.Location = new System.Drawing.Point(-1, -1);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersVisible = false;
-            this.dataGridView1.Size = new System.Drawing.Size(731, 150);
+            this.dataGridView1.Size = new System.Drawing.Size(735, 150);
             this.dataGridView1.TabIndex = 13;
-            // 
-            // kP_TagmetDataSet
-            // 
-            this.kP_TagmetDataSet.DataSetName = "KP_TagmetDataSet";
-            this.kP_TagmetDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // driversBindingSource
-            // 
-            this.driversBindingSource.DataMember = "Drivers";
-            this.driversBindingSource.DataSource = this.kP_TagmetDataSet;
-            // 
-            // driversTableAdapter
-            // 
-            this.driversTableAdapter.ClearBeforeFill = true;
             // 
             // iDDataGridViewTextBoxColumn
             // 
@@ -278,6 +264,20 @@
             this.tabNumDataGridViewTextBoxColumn.Name = "tabNumDataGridViewTextBoxColumn";
             this.tabNumDataGridViewTextBoxColumn.ReadOnly = true;
             // 
+            // driversBindingSource
+            // 
+            this.driversBindingSource.DataMember = "Drivers";
+            this.driversBindingSource.DataSource = this.kP_TagmetDataSet;
+            // 
+            // kP_TagmetDataSet
+            // 
+            this.kP_TagmetDataSet.DataSetName = "KP_TagmetDataSet";
+            this.kP_TagmetDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // driversTableAdapter
+            // 
+            this.driversTableAdapter.ClearBeforeFill = true;
+            // 
             // Drivers
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -304,8 +304,8 @@
             this.Text = "Водители";
             this.Load += new System.EventHandler(this.Drivers_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.kP_TagmetDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.driversBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kP_TagmetDataSet)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

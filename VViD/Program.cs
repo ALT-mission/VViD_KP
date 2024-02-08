@@ -16,7 +16,8 @@ namespace VViD
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new F_taskS());
+            // Application.Run(new F_taskS());
+            Application.Run(new Login_F());
         }
     }
 }

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace VViD
 {
-    public partial class F_taskS : Form
+    public partial class F_task : Form
     {
-        public F_taskS()
+        public F_task()
         {
             InitializeComponent();
         }
